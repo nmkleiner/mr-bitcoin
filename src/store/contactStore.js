@@ -1,5 +1,5 @@
 import contactService from '../services/contactService';
-import { observable, computed, action } from 'mobx-react';
+import { observable, computed, action } from 'mobx';
 
 export default class ContactStore {
     @observable
@@ -15,7 +15,7 @@ export default class ContactStore {
     }
   
     @action
-    async fetchContacts(filter) {
+    async getContacts(filter) {
       this.contacts = await contactService.getContacts(filter);
     }
   }

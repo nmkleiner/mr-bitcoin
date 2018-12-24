@@ -1,15 +1,20 @@
+import storageService from './StorageService';
+import utilService from './util.service';
 export default {
     getContacts,
     getContactById,
     saveContact,
 }
-
+const key = 'contacts'
 function getContactById(id) {
     return Promise.resolve(contactsDB.find(contact => id === contact._id))
 }
 
 function getContacts() {
-    return Promise.resolve(contactsDB)
+    let contacts = storageService.loadFromStorage(key)
+    if (contacts) contactsDB = contacts
+    else contacts = contactsDB
+    return Promise.resolve(contacts)
 }
 
 function saveContact(contact) {
@@ -24,16 +29,17 @@ function saveContact(contact) {
     }
 
     if (!contact._id) {
-        const _id = Math.round(Math.random() * 1000000)
+        const _id = utilService.makeId(6)
         contact._id = _id
         contactsDB.push(contact)
     } else {
         const idx = contactsDB.findIndex(cont => cont._id === contact._id)
         contactsDB.splice(idx,1,contact)
     }
+    storageService.saveToStorage(key,contactsDB)
 }
 
-const contactsDB = [{
+let contactsDB = [{
     _id: '123123',
     name: 'Yossi Buzaglo', 
     pic: 'https://randomuser.me/api/portraits/thumb/men/22.jpg',

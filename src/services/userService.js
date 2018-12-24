@@ -20,5 +20,5 @@ function isSignedUp() {
 }
 
 function getUser() {
-    return storageService.loadFromStorage(key)
+    return Promise.resolve(storageService.loadFromStorage(key))
 }

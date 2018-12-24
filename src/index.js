@@ -6,7 +6,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import RootStore from './store/rootStore';
 import {Provider} from 'mobx-react';
-import DevTools, { configureDevtool } from 'mobx-react-devtools';
+import { configureDevtool } from 'mobx-react-devtools';
 
 
 const rootStore = new RootStore()
@@ -21,7 +21,12 @@ configureDevtool({
   //   logFilter: change => change.type === 'reaction'
   });
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+                <Provider store={rootStore}>
+                  <App />
+                </Provider>
+, document.getElementById('root'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
