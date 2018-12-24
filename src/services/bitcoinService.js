@@ -35,14 +35,14 @@ function watchBitcoinRate(cb) {
     const getRate = async ()=>{
         let rate = await getBitcoinRate(1)
         if (rate === lastRate) return;
-        lastRate = rate;        
         rate = rate.toFixed(8)
         
-        cb(+rate)
+        cb(+rate,+lastRate)
+        lastRate = rate;        
     }
     // Kick it off immediately and then every 4 secs
     getRate();
-    var interval = setInterval(getRate, 4000)
+    var interval = setInterval(getRate, 1000)
     return ()=>clearInterval(interval)
 }
 

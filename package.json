@@ -63,7 +63,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "rescripts": [
     "env"
@@ -80,7 +82,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.2.3",
     "@rescripts/cli": "0.0.6",
-    "@rescripts/rescript-env": "0.0.2"
+    "@rescripts/rescript-env": "0.0.2",
+    "gh-pages": "^2.0.1"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -135,5 +138,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "http://nmkleiner.github.io/mr-bitcoin"
 }
