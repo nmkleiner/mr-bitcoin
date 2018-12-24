@@ -4,11 +4,16 @@ import ContactList from '../cmps/ContactList.js'
 import ContactFilter from '../cmps/ContactFilter'
 // import ContactDetails from '../cmps/ContactDetails.js'
 import { Link } from "react-router-dom";
+import { observer, observable } from 'mobx-react';
 
+
+
+@observer
 class HomePage extends Component {
-    state = {
-      contacts: [],
-    }
+      
+    @observable
+    contacts = []
+
 
     async componentDidMount() {
       var contacts = await contactService.getContacts()

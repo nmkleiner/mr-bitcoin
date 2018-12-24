@@ -1,0 +1,21 @@
+import contactService from '../services/contactService';
+import { observable, computed, action } from 'mobx-react';
+
+export default class ContactStore {
+    @observable
+    contacts = [];
+  
+    @computed
+    get contactsCount() {
+      return this.contacts.length;
+    }
+  
+    constructor(rootStore) {
+      this.rootStore = rootStore;
+    }
+  
+    @action
+    async fetchContacts(filter) {
+      this.contacts = await contactService.getContacts(filter);
+    }
+  }

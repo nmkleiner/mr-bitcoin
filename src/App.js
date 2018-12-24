@@ -7,12 +7,17 @@ import ContactDetails from './pages/ContactDetails'
 import StatisticPage from './pages/StatisticPage'
 import userSevice from './services/userService.js'
 import { BrowserRouter as Router, Route, NavLink, Switch, Redirect } from "react-router-dom";
+import { inject } from 'mobx-react';
+
 import './assets/css/App.scss';
+
+// @inject('store')
 
 class App extends Component {
   state = {
     isSignedUp: true
   }
+  
   
   async componentDidMount() {
     const isSignedUp = userSevice.isSignedUp()
