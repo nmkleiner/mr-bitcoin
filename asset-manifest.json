@@ -1,16 +1,16 @@
 {
-  "main.css": "/mr-bitcoin/static/css/main.12fe5ae9.chunk.css",
-  "main.js": "/mr-bitcoin/static/js/main.cf896104.chunk.js",
-  "main.js.map": "/mr-bitcoin/static/js/main.cf896104.chunk.js.map",
+  "main.css": "/mr-bitcoin/static/css/main.3594b414.chunk.css",
+  "main.js": "/mr-bitcoin/static/js/main.3576121f.chunk.js",
+  "main.js.map": "/mr-bitcoin/static/js/main.3576121f.chunk.js.map",
   "static/css/1.8a255f8c.chunk.css": "/mr-bitcoin/static/css/1.8a255f8c.chunk.css",
-  "static/js/1.99347d92.chunk.js": "/mr-bitcoin/static/js/1.99347d92.chunk.js",
-  "static/js/1.99347d92.chunk.js.map": "/mr-bitcoin/static/js/1.99347d92.chunk.js.map",
+  "static/js/1.e37c9ba8.chunk.js": "/mr-bitcoin/static/js/1.e37c9ba8.chunk.js",
+  "static/js/1.e37c9ba8.chunk.js.map": "/mr-bitcoin/static/js/1.e37c9ba8.chunk.js.map",
   "runtime~main.js": "/mr-bitcoin/static/js/runtime~main.725ba66c.js",
   "runtime~main.js.map": "/mr-bitcoin/static/js/runtime~main.725ba66c.js.map",
   "static/media/index.scss": "/mr-bitcoin/static/media/fa-regular-400.fc5252e5.woff",
+  "static/css/main.3594b414.chunk.css.map": "/mr-bitcoin/static/css/main.3594b414.chunk.css.map",
   "static/css/1.8a255f8c.chunk.css.map": "/mr-bitcoin/static/css/1.8a255f8c.chunk.css.map",
-  "static/css/main.12fe5ae9.chunk.css.map": "/mr-bitcoin/static/css/main.12fe5ae9.chunk.css.map",
   "index.html": "/mr-bitcoin/index.html",
-  "precache-manifest.e636657471fbad3c232b884b69547f58.js": "/mr-bitcoin/precache-manifest.e636657471fbad3c232b884b69547f58.js",
+  "precache-manifest.b2e1bea9e5a2eda00d29f328dbbdf02a.js": "/mr-bitcoin/precache-manifest.b2e1bea9e5a2eda00d29f328dbbdf02a.js",
   "service-worker.js": "/mr-bitcoin/service-worker.js"
 }

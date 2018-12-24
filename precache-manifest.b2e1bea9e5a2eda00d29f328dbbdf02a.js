@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/mr-bitcoin/static/media/fa-solid-900.8086e197.woff2"
   },
   {
-    "revision": "cf8961040ad02dea6e94",
-    "url": "/mr-bitcoin/static/css/main.12fe5ae9.chunk.css"
+    "revision": "3576121f3be2756d516d",
+    "url": "/mr-bitcoin/static/css/main.3594b414.chunk.css"
   },
   {
     "revision": "27603739fe78fee587c7b84873475b61",
     "url": "/mr-bitcoin/static/media/fa-solid-900.27603739.svg"
   },
   {
-    "revision": "99347d92d84b66b1d774",
-    "url": "/mr-bitcoin/static/js/1.99347d92.chunk.js"
+    "revision": "e37c9ba8cf2237ee0291",
+    "url": "/mr-bitcoin/static/js/1.e37c9ba8.chunk.js"
   },
   {
     "revision": "725ba66c854ee4b5ddf4",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/mr-bitcoin/static/media/fa-brands-400.b89c6c51.woff2"
   },
   {
-    "revision": "cf8961040ad02dea6e94",
-    "url": "/mr-bitcoin/static/js/main.cf896104.chunk.js"
+    "revision": "3576121f3be2756d516d",
+    "url": "/mr-bitcoin/static/js/main.3576121f.chunk.js"
   },
   {
     "revision": "dd4ff1196905f0585aef2c80486869e9",
@@ -52,12 +52,12 @@ self.__precacheManifest = [
     "url": "/mr-bitcoin/static/media/fa-solid-900.52b8345b.woff"
   },
   {
-    "revision": "50a544b5ad4d512e8db3cdc089823a00",
-    "url": "/mr-bitcoin/static/media/fa-brands-400.50a544b5.ttf"
-  },
-  {
     "revision": "7d43b9ae0b8bb1d0dc425d78dc577b0a",
     "url": "/mr-bitcoin/static/media/fa-brands-400.7d43b9ae.eot"
+  },
+  {
+    "revision": "50a544b5ad4d512e8db3cdc089823a00",
+    "url": "/mr-bitcoin/static/media/fa-brands-400.50a544b5.ttf"
   },
   {
     "revision": "734248d027cbaac7f03c0d931ec95593",
@@ -76,11 +76,11 @@ self.__precacheManifest = [
     "url": "/mr-bitcoin/static/media/fa-brands-400.fef43c1f.svg"
   },
   {
-    "revision": "99347d92d84b66b1d774",
+    "revision": "e37c9ba8cf2237ee0291",
     "url": "/mr-bitcoin/static/css/1.8a255f8c.chunk.css"
   },
   {
-    "revision": "e9a4b52b04314d95b25011c2e6dd234f",
+    "revision": "384e6e4956a612e5a64dff5aaa73fd09",
     "url": "/mr-bitcoin/index.html"
   }
 ];
